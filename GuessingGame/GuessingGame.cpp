@@ -15,7 +15,7 @@ bool guessingGame()
     difficulty choice;
     while (!userPicked) {
         int num;
-        num:: getNextLine(cin >> num);
+        cin >> num;
         switch (num) {
         case 1:
             choice = easy;
