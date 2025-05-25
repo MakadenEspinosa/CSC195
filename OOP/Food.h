@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+using namespace std;
 class Food
 {
 public: 
@@ -20,7 +22,7 @@ public:
 	~Food() {
 		//delete m_p;
 	}
-	void Consume();
+	virtual void Consume() = 0;
 	int GetCalories() { return m_calories; }
 	void SetCalories(int calories) { m_calories = calories; }
 protected :

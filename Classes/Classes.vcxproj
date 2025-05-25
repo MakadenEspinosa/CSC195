@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2df2a2df-bc4d-4683-9b8c-2ad7e4153d0b}</ProjectGuid>
-    <RootNamespace>OOP</RootNamespace>
+    <ProjectGuid>{382b941a-bb4e-40b2-8ecb-186c378cfb25}</ProjectGuid>
+    <RootNamespace>Classes</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,15 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Candy.cpp" />
-    <ClCompile Include="Food.cpp" />
-    <ClCompile Include="Fruit.cpp" />
-    <ClCompile Include="OOP.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Organism.cpp" />
+    <ClCompile Include="Tree.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Candy.h" />
-    <ClInclude Include="Food.h" />
-    <ClInclude Include="Fruit.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Dog.h" />
+    <ClInclude Include="Organism.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Tree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Classes.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,27 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OOP.cpp">
+    <ClCompile Include="Fail.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Food.cpp">
+    <ClCompile Include="Shape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Fruit.cpp">
+    <ClCompile Include="Circle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Candy.cpp">
+    <ClCompile Include="Rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Food.h">
+    <ClInclude Include="Shape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Fruit.h">
+    <ClInclude Include="Circle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Candy.h">
+    <ClInclude Include="Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
