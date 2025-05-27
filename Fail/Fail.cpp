@@ -13,18 +13,16 @@ int main() {
     (*c).SetRadius(3.0f);
     Rectangle* r = new Rectangle(4.0f, 5.0f);
 
-        shapes.push_back(c);
+    shapes.push_back(c);
     shapes.push_back(r);
 
-    for (int i = 0; i <= shapes.size(); i++)
+    for (int i = 0; i < shapes.size(); i++)
     {
         cout << "Area: " << shapes[i]->Area() << endl;
-
         if (dynamic_cast<Circle*>(shapes[i]) != nullptr)
             cout << "Radius: " << (*(dynamic_cast<Circle*>(shapes[i]))).GetRadius() << endl;
     }
     for (int i = 0; i < shapes.size(); i++)
         delete shapes[i];
-    shapes.~vector();
     return 0;
 }
