@@ -15,3 +15,10 @@ void Database::Display(Organism::kingdom type)
 			objects[i]->Write(std::cout);
 	}
 }
+
+void Database::GainAllEnergy()
+{
+	for (int i = 0; i < objects.size(); i++) {
+		objects[i]->GainEnergy();
+	}
+}

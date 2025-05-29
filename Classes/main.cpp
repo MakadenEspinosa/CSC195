@@ -8,7 +8,7 @@ int main()
     bool quit = false;
     while (!quit)
     {
-        std::cout << "1 - Create\n2 - Display All\n3 - Display by Name\n4 - Display by Type\n5 - Quit\n";
+        std::cout << "1 - Create\n2 - Display All\n3 - Display by Name\n4 - Display by Type\n5 - Gain Energy for all\n6 - Quit\n";
         int choice;
         std::cin >> choice;
         switch (choice)
@@ -46,7 +46,11 @@ int main()
             std::cin >> t;
             database.Display(static_cast<Organism::kingdom>(t)); break;
         }
-        case 5:
+        case 5: {
+            database.GainAllEnergy();
+            break;
+        }
+        case 6:
             quit = true;
             break;
         }

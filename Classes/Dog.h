@@ -12,5 +12,7 @@ class Dog : public Organism
         ostream << "Name: " << name << std::endl;
     }
     kingdom getKingdom() override { return kingdom::ANIMALIA; }
+    void GainEnergy() override;
+
 };
 

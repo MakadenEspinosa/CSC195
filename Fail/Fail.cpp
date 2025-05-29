@@ -20,7 +20,7 @@ int main() {
     {
         cout << "Area: " << shapes[i]->Area() << endl;
         if (dynamic_cast<Circle*>(shapes[i]) != nullptr)
-            cout << "Radius: " << (*(dynamic_cast<Circle*>(shapes[i]))).GetRadius() << endl;
+            cout << "Radius: " << dynamic_cast<Circle*>(shapes[i])->GetRadius() << endl;
     }
     for (int i = 0; i < shapes.size(); i++)
         delete shapes[i];

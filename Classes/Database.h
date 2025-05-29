@@ -39,5 +39,6 @@ public :
            }
     }
 	void Display(Organism::kingdom type);
+    void GainAllEnergy();
 };
 

@@ -1,8 +1,9 @@
 #pragma once
 #include "Organism.h"
-class Tree :
-    public Organism
+class Tree : public Organism
 {
+    int leaves;
+    Tree() : leaves{ 5 } {};
     void Read(std::ostream& ostream, std::istream& istream) {
         Organism::Read(ostream, istream);
         ostream << "Enter Name: ";
@@ -12,6 +13,8 @@ class Tree :
         Organism::Write(ostream);
         ostream << "Name: " << name << std::endl;
     }
+    void GainEnergy() override;
+    void GrowLeaves();
     kingdom getKingdom() override { return kingdom::PLANTAE; }
 };
 
