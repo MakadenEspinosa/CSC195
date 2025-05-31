@@ -2,6 +2,7 @@
 #include "Organism.h"
 class Tree : public Organism
 {
+public:
     int leaves;
     Tree() : leaves{ 5 } {};
     void Read(std::ostream& ostream, std::istream& istream) {
