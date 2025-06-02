@@ -9,10 +9,14 @@ public:
         Organism::Read(ostream, istream);
         ostream << "Enter Name: ";
         istream >> name;
+        ostream << "Enter Number of Leaves: ";
+        istream >> leaves;
+        ostream << "Enter energy: ";
+        istream >> energy;
     }
     void Write(std::ostream& ostream) override {
         Organism::Write(ostream);
-        ostream << "Name: " << name << std::endl;
+        ostream << "Name: " << name << ", Leaves: " << leaves<< ", Energy: " << energy << std::endl;
     }
     void GainEnergy() override;
     void GrowLeaves();

@@ -8,7 +8,7 @@ int main()
     bool quit = false;
     while (!quit)
     {
-        std::cout << "1 - Create\n2 - Display All\n3 - Display by Name\n4 - Display by Type\n5 - Gain Energy for all\n6 - Quit\n";
+        std::cout << "1 - Create\n2 - Display All\n3 - Display by Name\n4 - Display by Type\n5 - Gain Energy for all\n6 - Gain Dog Bones\n7 - Gain leaves\n8 - Quit\n";
         int choice;
         std::cin >> choice;
         switch (choice)
@@ -50,7 +50,15 @@ int main()
             database.GainAllEnergy();
             break;
         }
-        case 6:
+        case 6: {
+            database.GainBones();
+            break;
+        }
+        case 7: {
+            database.GainLeaves();
+            break;
+        }
+        case 8:
             quit = true;
             break;
         }

@@ -40,5 +40,7 @@ public :
     }
 	void Display(Organism::kingdom type);
     void GainAllEnergy();
+    void GainBones();
+    void GainLeaves();
 };
 
